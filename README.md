@@ -1,5 +1,5 @@
 # Time-optimal buggy racing
-Code can be found in the ```progress_maximize_racing``` directory.
+Code can be found in the ```progress-maximize-racing``` directory.
 Authored by Jack He and Gabriel Zaragoza, with snippets adapted from ```examples/acados_python/race_car```.
 
 # acados
