@@ -73,13 +73,13 @@ def acados_settings(Tf, N, track_file):
     ocp.dims.N = N
 
     # set cost
-    Q = np.diag([ 1e-1, 1e-8, 1e-8, 1e-8, 1e-3, 5e-3 ])
+    Q = np.diag([ 5e-2, 1e-2, 1e-8, 1e-8, 1e-8, 1e-3 ])
 
     R = np.eye(nu)
     R[0, 0] = 1e-3
     R[1, 1] = 5e-3
 
-    Qe = np.diag([ 5e0, 1e1, 1e-8, 1e-8, 5e-3, 2e-3 ])
+    Qe = np.diag([ 5e0, 1e0, 1e-8, 1e-8, 5e-3, 2e-3 ])
 
     ocp.cost.cost_type = "LINEAR_LS"
     ocp.cost.cost_type_e = "LINEAR_LS"

@@ -69,7 +69,7 @@ def acados_settings(Tf, N, track_file):
     nsh = 2
 
     # set cost
-    Q = np.diag([ 1e-1, 1e-8, 1e-8, 1e-8, 1e-3, 5e-3 ])
+    Q = np.diag([ 1e-1, 1e-8, 1e-8, 1e-8, 1e-3, 5e-3])
 
     R = np.eye(nu)
     R[0, 0] = 1e-3
@@ -150,11 +150,6 @@ def acados_settings(Tf, N, track_file):
     ocp.solver_options.integrator_type = "ERK"
     ocp.solver_options.sim_method_num_stages = 4
     ocp.solver_options.sim_method_num_steps = 3
-
-    # ocp.solver_options.qp_solver_tol_stat = 1e-2
-    # ocp.solver_options.qp_solver_tol_eq = 1e-2
-    # ocp.solver_options.qp_solver_tol_ineq = 1e-2
-    # ocp.solver_options.qp_solver_tol_comp = 1e-2
 
     # create solver
     acados_solver = AcadosOcpSolver(ocp, json_file="acados_ocp.json")

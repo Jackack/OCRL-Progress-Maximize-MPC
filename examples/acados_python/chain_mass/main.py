@@ -161,7 +161,7 @@ def run_nominal_control(chain_params):
         L1_pen = 1
         ocp.cost.Zl = L2_pen * np.ones((nbx,))
         ocp.cost.Zu = L2_pen * np.ones((nbx,))
-        ocp.cost.zl = L1_pen * np.ones((nbx,))
+        = L1_pen * np.ones((nbx,))
         ocp.cost.zu = L1_pen * np.ones((nbx,))
 
     # solver options

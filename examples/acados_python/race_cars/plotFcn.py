@@ -36,7 +36,7 @@ from matplotlib import cm
 import matplotlib.pyplot as plt
 import numpy as np
 
-def plotTrackProj(simX,filename='LMS_Track.txt', T_opt=None):
+def plotTrackProj(simX,filename='buggy_Track.txt', T_opt=None):
     # load track
     s=simX[:,0]
     n=simX[:,1]

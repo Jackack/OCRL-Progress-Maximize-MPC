@@ -1,3 +1,7 @@
+# Time-optimal buggy racing
+Code can be found in the '''prorgess_maximize_racing''' directory.
+Authored by Jack He and Gabriel Zaragoza, with snippets adapted from '''examples/acados_python/race_car'''.
+
 # acados
 <!-- [![Travis Status](https://secure.travis-ci.org/acados/acados.png?branch=master)](http://travis-ci.org/acados/acados) -->
 [![Appveyor status](https://ci.appveyor.com/api/projects/status/q0b2nohk476u5clg?svg=true)](https://ci.appveyor.com/project/roversch/acados)
